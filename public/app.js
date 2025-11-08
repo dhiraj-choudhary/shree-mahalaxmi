@@ -76,7 +76,7 @@ function renderProducts(products) {
             el('span', { class: 'type-badge' }, p.type || '')
           ),
           el('p', { class: 'desc' }, p.description),
-          el('div', { class: 'price' }, `$${p.price}`),
+          el('div', { class: 'price' }, `₹${p.price}`),
           el('button', { class: 'inquire', 'data-id': p.id, 'data-name': p.name }, 'Inquire')
         );
         grid.appendChild(card);
@@ -147,7 +147,7 @@ function createProductCard(p) {
       el('span', { class: 'type-badge' }, p.type || '')
     ),
     el('p', { class: 'desc' }, p.description),
-    el('div', { class: 'price' }, `$${p.price}`),
+  el('div', { class: 'price' }, `₹${p.price}`),
     el('button', { class: 'inquire', 'data-id': p.id, 'data-name': p.name }, 'Inquire')
   );
 }
