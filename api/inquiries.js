@@ -43,12 +43,14 @@ async function writeJson(file, data) {
     await fs.writeFile(file, json, 'utf8');
     return;
   } catch (err) {
-    // If filesystem is read-only (common on serverless platforms), fallback to tmp
-    if (err && (err.code === 'EROFS' || err.code === 'EPERM' || err.code === 'EACCES')) {
+    // If filesystem is read-only (common on serverless platforms) or the target
+    // path can't be created (ENOENT on some serverless images), fallback to tmp
+    if (err && (err.code === 'EROFS' || err.code === 'EPERM' || err.code === 'EACCES' || err.code === 'ENOENT')) {
       try {
+        console.warn(`Unable to write to ${file} (${err && err.code}); falling back to ${FALLBACK_INQUIRIES_FILE}`);
         await fs.mkdir(path.dirname(FALLBACK_INQUIRIES_FILE), { recursive: true });
         await fs.writeFile(FALLBACK_INQUIRIES_FILE, json, 'utf8');
-        console.warn(`Wrote inquiries to fallback file ${FALLBACK_INQUIRIES_FILE} due to filesystem restrictions`);
+        console.warn(`Wrote inquiries to fallback file ${FALLBACK_INQUIRIES_FILE} due to filesystem restrictions or missing path`);
         return;
       } catch (err2) {
         console.error('Failed to write fallback inquiries file', err2);
