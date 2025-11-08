@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "brand": "Mahalaxmi",
+    "type": "Cement",
+    "tags": ["building","bulk","cement"],
+    "name": "50kg Portland Cement",
+    "description": "High-strength Portland cement suitable for construction and masonry.",
+    "price": 8.5,
+    "image": "https://images.unsplash.com/photo-1556909215-8b153d7ecf39?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "brand": "Mahalaxmi",
+    "type": "Steel",
+    "tags": ["rebar","steel","construction"],
+    "name": "Mild Steel Rod (8mm) - 12ft",
+    "description": "Hot-rolled mild steel reinforcement bar for structural work.",
+    "price": 12.0,
+    "image": "https://images.unsplash.com/photo-1549388604-817d15aa0110?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "brand": "Bosch",
+    "type": "Power Tool",
+    "tags": ["drill","power-tool"],
+    "name": "Electric Drill (Cordless)",
+    "description": "18V cordless drill with two batteries and quick charger.",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1581092795363-8c2f5b0f5a7a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "brand": "Dulux",
+    "type": "Paint",
+    "tags": ["paint","decor","exterior"],
+    "name": "Exterior Emulsion Paint (10L)",
+    "description": "Weather-resistant exterior paint with good coverage and finish.",
+    "price": 34.5,
+    "image": "https://images.unsplash.com/photo-1532634896-26909d0d4f9a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "brand": "Mahalaxmi",
+    "type": "Fasteners",
+    "tags": ["nails","fasteners","carpentry"],
+    "name": "Galvanized Nails Pack (1kg)",
+    "description": "Rust-resistant galvanized nails for general carpentry.",
+    "price": 2.99,
+    "image": "https://images.unsplash.com/photo-1580910051073-0b8d6f1b7c6d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "brand": "AquaFlow",
+    "type": "Plumbing",
+    "tags": ["pipe","plumbing"],
+    "name": "PVC Plumbing Pipe (2m)",
+    "description": "Durable PVC pipe for water supply and drainage (2 meters).",
+    "price": 5.25,
+    "image": "https://images.unsplash.com/photo-1581579183540-6f2d3ddf1b9a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 7,
+    "brand": "DeWalt",
+    "type": "Power Tool",
+    "tags": ["grinder","power-tool","cutting"],
+    "name": "Angle Grinder (4-inch)",
+    "description": "High-speed angle grinder for cutting and grinding.",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1597764693853-7f0f4f6c8f1d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 8,
+    "brand": "Stanley",
+    "type": "Hand Tool",
+    "tags": ["hammer","hand-tool","carpentry"],
+    "name": "Claw Hammer (16oz)",
+    "description": "Durable steel hammer with comfortable grip for carpentry.",
+    "price": 9.5,
+    "image": "https://images.unsplash.com/photo-1555685812-4b943f1e7a97?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "brand": "Makita",
+    "type": "Power Tool",
+    "tags": ["driver","power-tool","fastening"],
+    "name": "Impact Driver",
+    "description": "Compact impact driver for high torque fastening tasks.",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "brand": "Mahalaxmi",
+    "type": "Tool",
+    "tags": ["saw","hand-tool","carpentry"],
+    "name": "Hand Saw (24in)",
+    "description": "Carpentry hand saw with hardened teeth for smooth cuts.",
+    "price": 12.75,
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55a19?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 11,
+    "brand": "Bosch",
+    "type": "Power Tool",
+    "tags": ["drill","masonry","power-tool"],
+    "name": "Hammer Drill",
+    "description": "Powerful hammer drill for masonry and concrete drilling.",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1602524812334-9b0b1f4a1a1a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 12,
+    "brand": "Dulux",
+    "type": "Paint",
+    "tags": ["paint","interior","decor"],
+    "name": "Interior Emulsion Paint (5L)",
+    "description": "Low-odor interior paint with smooth finish.",
+    "price": 19.99,
+    "image": "https://images.unsplash.com/photo-1505691723518-36a1fb7f2b4b?auto=format&fit=crop&w=800&q=80"
+  }
+]

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shree Mahalaxmi Hardware</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="/fallback.svg" alt="Mahalaxmi logo" />
+        <div class="brand-text">
+          <h1>Shree Mahalaxmi Hardware</h1>
+          <p class="tag">Tools, Building Materials & More</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="/admin.html">Admin</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone" href="tel:+919876543210">+91 98765 43210</a>
+        <a class="btn btn-call" href="tel:+919876543210">Call</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <label for="group-select">Group by:</label>
+      <select id="group-select">
+        <option value="brand">Brand</option>
+        <option value="type">Type</option>
+        <option value="tag">Tag</option>
+        <option value="none">None</option>
+      </select>
+
+      <!-- Search input for filtering products -->
+      <div class="search-wrap">
+        <input id="search-input" type="search" placeholder="Search products, brand, type or tags..." aria-label="Search products" />
+        <button id="search-clear" aria-label="Clear search" title="Clear search">✕</button>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <section id="products" class="product-grid">
+        <!-- products will be injected here -->
+      </section>
+
+      <aside class="inquiry-panel">
+        <h2>Place an inquiry / Request Call Back</h2>
+        <form id="inquiry-form">
+          <input type="hidden" id="productId" name="productId" />
+          <div><label>Product: <span id="selectedProduct">(none)</span></label></div>
+          <div><label>Name<br/><input id="name" name="name" required /></label></div>
+          <div><label>Phone<br/><input id="phone" name="phone" required /></label></div>
+          <div><label>Email<br/><input id="email" name="email" type="email" required /></label></div>
+          <div><label>Message<br/><textarea id="message" name="message" rows="4" required></textarea></label></div>
+          <div><button type="submit">Send Inquiry</button></div>
+          <div id="form-status" class="status"></div>
+        </form>
+        <hr />
+        <div class="store-info" id="contact">
+          <h3>Store Hours</h3>
+          <p>Mon - Sat: 9:00 AM - 7:00 PM<br/>Sun: 9:00 AM - 2:00 PM</p>
+          <h3>Address</h3>
+          <p>123 Main Road, Your City</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Mahalaxmi Hardware Stores</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

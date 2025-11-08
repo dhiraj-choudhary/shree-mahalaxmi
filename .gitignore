@@ -1,0 +1,7 @@
+node_modules/
+server/data/inquiries.json
+.env
+
+.vercel
+.idea/
+.vercel/

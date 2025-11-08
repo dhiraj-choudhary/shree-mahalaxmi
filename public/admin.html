@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Upload Products</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main style="max-width:760px;margin:2rem auto;">
+    <h1>Admin — Upload Products XLSX</h1>
+    <p>Upload an .xlsx file containing product rows. The first sheet will be used. Complex fields like <code>tags</code> may be JSON or comma-separated.</p>
+
+    <form id="upload-form">
+      <div>
+        <label for="file">Choose XLSX file</label><br />
+        <input id="file" type="file" accept=".xlsx,.xls" />
+      </div>
+      <div style="margin-top:0.6rem;"><button id="upload" type="submit">Upload</button></div>
+    </form>
+
+    <div id="status" style="margin-top:1rem;color:#222"></div>
+    <hr />
+    <p><a href="/">Back to store</a></p>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>
+
